@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Fórmula Binomial</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="menu">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <div id="input">
+                <table style="margin: 0px; width: 100%">
+                  <tbody>
+                    <tr>
+                      <td valign="top" align="center" id="title" colspan="2">
+                        <h2>Calcular distribuição binomial</h2>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>N (número de tentativas)</label></td>
+                      <td>
+                        <input type="text" id="n" class="campo"/> <label id="unit"></label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>X (número de sucessos)</label></td>
+                      <td>
+                        <input type="text" id="r" class="campo"/> <label id="unit"></label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>P (Probabilidade de sucesso)</label></td>
+                      <td>
+                        <input type="text" id="p" class="campo" placeholder="ex: 0.34" />
+                        <label id="unit"></label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center"></td>
+                      <td>
+                        <a
+                          type="button"
+                          class="btn btn-success"
+                          onclick="calculate()"
+                          id="button"
+                          value="Calcular"
+                          >Calcular</a
+                        >
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding-left: 40px"></td>
+          </tr>
+          <tr>
+            <td>
+              <div style="visibility: visible" id="res_area">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td colspan="2"><font id="res">Resultado</font></td>
+                    </tr>
+                    <tr>
+                      <td><label>Distribuição binomial</label></td>
+                      <td>
+                        <input type="text" id="result1" class="result" />
+                        <label id="unit"></label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
