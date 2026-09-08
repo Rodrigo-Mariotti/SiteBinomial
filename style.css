@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-.manu {
+.menu {
     width: 500px;
     margin: 80px auto;
     background-color: white;
@@ -64,4 +64,8 @@ label {
 
 .result {
     background-color: #f5f5f5;
+    width: 180px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
