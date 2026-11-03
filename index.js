@@ -12,13 +12,13 @@ function binomialProbability(n, x, p) {
 }
 
 function cumulativeBinomialProbability(n, x, p) {
-    if (p === 0) return x === 0 ? 1 : 0;
-    if (p === 1) return 1;
+    if (p === 0) return 1;
+    if (p === 1) return x === n ? 1 : 0;
 
-    let term = binomialProbability(n, x, p);
+    let term = Math.pow(1 - p, n);
     let cumulative = term;
 
-    for (let successes = x; successes < n; successes++) {
+    for (let successes = 0; successes < x; successes++) {
         term *= ((n - successes) / (successes + 1)) * (p / (1 - p));
         cumulative += term;
     }
